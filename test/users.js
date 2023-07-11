@@ -5,7 +5,7 @@ const request = supertest('https://gorest.co.in/public/v2/users');
 
 const TOKEN = '2bfa75554c289d1f70a4a99a3744f64ce8b2ef822a75d33a40ba2e7071c60387'
 
-xdescribe('Users', () => {
+describe('Users', () => {
     it ('Get /users', () => {
 /*         request.get(`?access-token=${TOKEN}`).end((err,res) => {
             expect(res._body).to.not.be.empty;
