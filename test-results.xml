@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="3.580" tests="6" failures="3">
+  <testsuite name="Root Suite" timestamp="2023-07-11T23:26:44" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Users" timestamp="2023-07-11T23:26:44" tests="6" file="D:\repoz\SuperTestApi\test\users.js" time="3.579" failures="3">
+    <testcase name="Users Get /users" time="0.835" classname="Get /users">
+    </testcase>
+    <testcase name="Users GET /users/.id" time="0.434" classname="GET /users/.id">
+      <failure message="expected undefined to equal 2060" type="AssertionError"><![CDATA[AssertionError: expected undefined to equal 2060
+    at D:\repoz\SuperTestApi\test\/users.js:22:40
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+      + expected - actual:  failed to generate Mocha diff
+]]></failure>
+    </testcase>
+    <testcase name="Users GET /users/users with query params" time="0.472" classname="GET /users/users with query params">
+    </testcase>
+    <testcase name="Users POST /users" time="0.703" classname="POST /users">
+    </testcase>
+    <testcase name="Users PUT /2070" time="0.670" classname="PUT /2070">
+      <failure message="expected { message: &apos;Resource not found&apos; } to have deep property &apos;status&apos;" type="AssertionError"><![CDATA[AssertionError: expected { message: 'Resource not found' } to have deep property 'status'
+    at D:\repoz\SuperTestApi\test\/users.js:70:39
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testcase>
+    <testcase name="Users DELETE /users:id" time="0.452" classname="DELETE /users:id">
+      <failure message="expected { message: &apos;Resource not found&apos; } to equal null" type="AssertionError"><![CDATA[AssertionError: expected { message: 'Resource not found' } to equal null
+    at D:\repoz\SuperTestApi\test\/users.js:80:37
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+      + expected - actual:  failed to generate Mocha diff
+]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
